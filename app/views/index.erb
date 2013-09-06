@@ -1,0 +1,15 @@
+<div class="container">
+
+  <% @messages.each do |message| %>
+  <%= message %><br>
+  <% end %>
+
+  <p>Welcome!</p>
+
+  <% if current_user %>
+    <% User.all.each do |user| %>
+      <%= user.name %><br>
+    <% end %>
+  <% end %>
+
+</div>
